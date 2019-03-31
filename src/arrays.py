@@ -15,7 +15,7 @@ def slice_array_with_stepped_indexes(arr: list, index: int):
     Returns:
     - A new array with only the elements on the stepped indexes
     """
-    pass
+    return arr[::index]
 
 def reverse_array(arr: list):
     """
@@ -27,7 +27,7 @@ def reverse_array(arr: list):
     Returns:
     - The given array reversed
     """
-    pass
+    return arr[::-1]
 
 def remove_last_element_from_array(arr: list):
     """
@@ -39,7 +39,7 @@ def remove_last_element_from_array(arr: list):
     Returns:
     - the same array given, but without the last element
     """
-    pass
+    return arr[:-1]
 
 def add_next_number_to_array_of_integers(arr:list):
     """
@@ -54,7 +54,8 @@ def add_next_number_to_array_of_integers(arr:list):
     Returns:
     - An array of integers with a number added
     """
-    pass
+    arr.append(arr[-1]+1)
+    return arr
 
 def filter_odd_numbers(arr: list):
     """
@@ -68,7 +69,7 @@ def filter_odd_numbers(arr: list):
     Returns:
     - an array only with odd numbers
     """
-    pass
+    return [e for e in arr if e % 2 == 1]
 
 def multiply_all_elements_in_array_by_given_number(arr: list, n: int):
     """
@@ -83,7 +84,7 @@ def multiply_all_elements_in_array_by_given_number(arr: list, n: int):
     Returns:
     - an array with the elements multiplied by n
     """
-    pass
+    return [e*n for e in arr]
 
 def get_all_indexes_from_array(arr: list, el: object):
     """
@@ -98,7 +99,7 @@ def get_all_indexes_from_array(arr: list, el: object):
     Returns:
     - a list with all the indexes where the element was found
     """
-    pass
+    return [i for i,e in enumerate(arr) if e == el]
 
 def copy_array(arr: list):
     """
@@ -110,7 +111,7 @@ def copy_array(arr: list):
     Returns:
     - An exact copy of the given array
     """
-    pass
+    return arr[::]
 
 
 
