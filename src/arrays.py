@@ -99,7 +99,7 @@ def get_all_indexes_from_array(arr: list, el: object):
     Returns:
     - a list with all the indexes where the element was found
     """
-    return [i for i,e in enumerate(arr) if e == el]
+    return [i for i,e in enumerate(arr) if e is el]
 
 def copy_array(arr: list):
     """
