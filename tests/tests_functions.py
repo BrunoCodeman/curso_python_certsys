@@ -58,12 +58,20 @@ class FunctionsTest(unittest.TestCase):
         actual = funcoes.dict_values_separated_by_given_char(d, separador)
         self.assertEqual(actual, expected)
     
-
     def test_must_return_name_and_lastname(self):
         full_name = ["Friedrich", "Engels"]
         expected = "Friedrich Engels"
         actual = funcoes.make_full_name(*full_name)
         self.assertEqual(actual, expected)
+
+    def test_must_split_dict_into_lists(self):
+        arr = {"nome": "Lyudmila Pavlichenko", "qualidade": "Dizimou nazi até dizer chega!"}
+        expected_keys = ["nome", "qualidade"]
+        expected_values = ["Lyudmila Pavlichenko", "Dizimou nazi até dizer chega!"]
+        actual_keys, actual_values = funcoes.get_keys_and_values_from_dict(arr)
+        self.assertEqual(actual_keys, expected_keys)
+        self.assertEqual(actual_values, expected_values)    
+
         
     
 
