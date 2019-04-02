@@ -10,10 +10,10 @@ class DictionaryTest(unittest.TestCase):
         self.assertEqual(dict_keys, actual)
 
     def test_must_get_all_values(self):
-        dict_values = ["Frida Kahlo", "México"]
+        expected = ["Frida Kahlo", "México"]
         d = { "nome": "Frida Kahlo", "país": "México" }
         actual = dicionarios.get_values_from_dict(d)
-        self.assertEqual(dict_values, actual)
+        self.assertEqual(actual, expected)
     
     def test_must_transform_two_lists_into_dicts(self):
         dict_keys = ["nome", "país"]
