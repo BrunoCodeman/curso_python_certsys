@@ -15,7 +15,7 @@ class DictionaryTest(unittest.TestCase):
         actual = dicionarios.get_values_from_dict(d)
         self.assertEqual(actual, expected)
     
-    def test_must_transform_two_lists_into_dicts(self):
+    def test_must_transform_two_lists_into_dict(self):
         dict_keys = ["nome", "país"]
         dict_values = ["Thomas Sankara", "Burkina Faso"]
         expected =  { "nome":"Thomas Sankara", "país": "Burkina Faso" }
