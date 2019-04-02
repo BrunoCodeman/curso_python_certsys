@@ -38,6 +38,12 @@ def remove_non_string_indexes(d: dict):
     new = {k:v for (k,v) in d.items() if type(k) is not int }
     return new
 
+def get_keys_and_values_from_dict(arr: dict):
+    """
+    Returns the keys and values of a dictionary splited in two lists
+    """
+    return arr.keys(), arr.values()
+
 um_dicionario = dict(a=1, b=2, c=3)
 outro_dicionario = { "a": 1, "b":2, "c":3 }
 print(um_dicionario is outro_dicionario)
