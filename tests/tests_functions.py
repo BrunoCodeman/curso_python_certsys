@@ -5,7 +5,6 @@ from src import funcoes
 class FunctionsTest(unittest.TestCase):
 
     def test_must_filter_divisible_by_two(self):
-        #check type == filter
         arr = [0,1,2,3,4,5,6,7,8,9]
         expected = [0,2,4,6,8]
         actual = funcoes.filter_divisible_by_two(arr)
@@ -15,7 +14,7 @@ class FunctionsTest(unittest.TestCase):
 
     def test_must_multiply_array_by_ten(self):
         arr = [1,2,3,4,5]
-        expected = [2,4,6,8,10]
+        expected = [10, 20, 30, 40, 50]
         actual = funcoes.multiply_array_by_ten(arr)
         self.assertEqual(type(actual), map)
         self.assertEqual(list(actual), expected)
@@ -35,7 +34,7 @@ class FunctionsTest(unittest.TestCase):
 
     def test_must_add_line_to_file(self):
         content = ""
-        line = "Ao rico tudo é permitido"
+        line = "\nAo rico tudo é permitido"
         file_path = f"{os.getcwd()}/src/a_internacional.txt"
         funcoes.add_line_to_file(file_path, line)
         with open(file_path, "r") as f:
