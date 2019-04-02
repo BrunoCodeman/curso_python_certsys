@@ -40,3 +40,8 @@ def dict_values_separated_by_given_char(d:dict , separator: str) -> str:
     return separator.join(d.values())
 
 
+def get_keys_and_values_from_dict(arr: dict):
+    """
+    Returns the keys and values of a dictionary splited in two lists
+    """
+    return arr.keys(), arr.values()

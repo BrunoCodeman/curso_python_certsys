@@ -65,5 +65,10 @@ class FunctionsTest(unittest.TestCase):
         actual = funcoes.make_full_name(*full_name)
         self.assertEqual(actual, expected)
         
-    
-
+    def test_must_split_dict_into_lists(self):
+        arr = {"nome": "Lyudmila Pavlichenko", "qualidade": "Dizimou nazi até dizer chega!"}
+        expected_keys = ["nome", "qualidade"]
+        expected_values = ["Lyudmila Pavlichenko", "Dizimou nazi até dizer chega!"]
+        actual_keys, actual_values = funcoes.get_keys_and_values_from_dict(arr)
+        self.assertEqual(list(actual_keys), expected_keys)
+        self.assertEqual(list(actual_values), expected_values)
