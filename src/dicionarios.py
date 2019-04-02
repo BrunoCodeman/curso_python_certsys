@@ -36,6 +36,12 @@ def remove_non_string_indexes(d: dict):
     """
     pass
 
+def get_keys_and_values_from_dict(arr: dict):
+    """
+    Returns the keys and values of a dictionary splited in two lists
+    """
+    pass
+
 um_dicionario = dict(a=1, b=2, c=3)
 outro_dicionario = { "a": 1, "b":2, "c":3 }
 print(um_dicionario is outro_dicionario)
