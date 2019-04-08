@@ -1,5 +1,7 @@
 {
     "port": "8080",
     "user": "python_lover",
-    "password": "cump3t4"
+    "password": "cump3t4",
+    "weather_api_key":"sua_chave_aqui",
+    "base_url": "http://api.openweathermap.org"
 }
