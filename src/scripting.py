@@ -15,8 +15,16 @@ def get_hardware_use():
     """
     Shows python's hardware consumption and total memory/cpu usage
     """
-
     pass
+
+
+def json_apt_history_info():
+    """
+    Generates a json file with apt history
+    """
+    pass
+
+
 
 def get_weather_from_city(city, country):
     """
@@ -25,4 +33,8 @@ def get_weather_from_city(city, country):
 
     pass
 
+
+if __name__ == "__main__":
+    pass
+    
 
