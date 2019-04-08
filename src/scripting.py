@@ -12,8 +12,17 @@ log_file_path = "/var/log/apt/history.log"
 __CONFIG__ = json.load(open("configs.json","r"))
 
 def get_hardware_use():
+    """
+    Shows python's hardware consumption and total memory/cpu usage
+    """
+
     pass
 
 def get_weather_from_city(city, country):
+    """
+    Shows weather from given city from selected country
+    """
+
     pass
+
 
