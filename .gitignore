@@ -1,3 +1,5 @@
 .vscode/
 __pycache__/
 configs.json
+weather_content.json
+json_log.json
